@@ -1,0 +1,16 @@
+Action: execute_bash({"command":"pip freeze 2>/dev/null | grep -i -E \"google-api|google-auth\" ; echo \"---\" ; ls /app/backend","description":"Checking installed Google library versions"})
+Observation: google-api-core==2.33.0
+google-api-python-client==2.201.0
+google-auth==2.62.0
+google-auth-httplib2==0.4.4
+google-auth-oauthlib==1.5.0
+---
+__pycache__
+lib
+models
+pytest.ini
+requirements.txt
+routers
+server.py
+tests
+Exit code: 0
